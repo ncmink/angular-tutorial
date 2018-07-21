@@ -7,7 +7,15 @@
 </div>
 
 
+<div class='container'>
+  <div class='content'>
 
-<input type="text" [(ngModel)] = "title">
+    <input type="text" name = "title" (change)="press($event)" value="{{ title }}">
+
+  </div>
+</div>
+
+
+
 
 
