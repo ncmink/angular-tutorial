@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  menus = [
+    {
+      name: "Home",
+      link: "#"
+    },
+    {
+      name: "Google",
+      link: "www.google.com"
+    }
+  ];
+
   constructor() { }
 
   ngOnInit() {
