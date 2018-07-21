@@ -10,7 +10,7 @@
 <div class='container'>
   <div class='content'>
 
-    <input type="text" name = "title" (change)="press($event)" value="{{ title }}">
+    <input type="text" (change)="press($event)" [value]="title">
 
   </div>
 </div>
