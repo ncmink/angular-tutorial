@@ -10,11 +10,25 @@ export class HeaderComponent implements OnInit {
   menus = [
     {
       name: "Home",
-      link: "#"
+      link: "/"
     },
     {
-      name: "Google",
-      link: "www.google.com"
+      name: "About",
+      link: "/about"
+    },
+    {
+      name: "Dropdown",
+      link: "#",
+      menus: [
+        {
+          name: "Action",
+          link: "#"
+        },
+        {
+          name: "Others",
+          link: "#"
+        }
+      ]
     }
   ];
 

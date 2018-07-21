@@ -1,3 +1,17 @@
-<p>
-  feature works!
-</p>
+
+
+<div class="row" *ngIf="show">
+  <div class="col-md-4" *ngFor="let data of datas.datas">
+      <h5>{{data.heading}}</h5>
+      <p class="card-text">{{data.data}}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<div class="row" *ngIf="!show">
+  Loading...
+</div>
+
+
+
+
